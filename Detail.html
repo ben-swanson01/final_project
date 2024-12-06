@@ -1,0 +1,43 @@
+<html>
+
+	<head>
+		<title> Quaterback DETAIL PAGE</title>
+		<style>
+			body { 
+				background-color: red;
+				text-color: black
+			}
+		</style>
+	</head>
+	<body>
+		<img src="https://cdn.vox-cdn.com/thumbor/FLeIloQqjmVL3FXETsk9jbJ07Rc=/525x199:3663x2047/1200x675/filters:focal(2426x751:3012x1337)/cdn.vox-cdn.com/uploads/chorus_image/image/70461348/1196858274.0.jpg">
+	
+		<a href="index.html">Go back to index</a>
+	
+	</body>
+	
+	<script> 
+	var url_data = new URLSearchParams(window.location.search);
+			
+			 console.log(url_data.get("quaterback_stats_id"));
+			
+			  var quaterback_stats_id = url_data.get("id");
+			  
+			  if (quaterback_stats_id) {
+				fetch("http://157.230.214.215/api/ben_quaterback_stats/${quaterback_stats_id}") 
+				.then(response => {
+				// if (!response.ok) {
+				//	throw new Error ('HTTP error status: ${response.status}'); 
+				//	}
+					return response.json();
+				}) 
+				.then(itemDetails => {
+					const detailsContainer = document.getElementById('item-details');
+					
+					
+					
+					
+					
+	</script
+
+</html>
