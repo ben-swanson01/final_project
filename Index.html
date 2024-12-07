@@ -16,34 +16,18 @@
 		
 		<a href="detail.html">Click here to go to detail page</a>
 		
-		<ul id = "
+		<ul id="list"></ul>
 		
 		</body>
 			<script>
-				fetch("http://157.230.214.215/api/ben_quaterback_stats").then(response => 
-
-				return response.json();
-				}
-				
-				
-				
-				then(data_from_api => {
-			console.log(data_from_api);
-			})
+				fetch("http://157.230.214.215/api/ben_quaterback_stats")
+    .then(response => return response.json())
+    .then(data_from_api => {
+		console.log(data_from_api);
+    })
 			
 
-			
-			
-			
+						
 			</script>
-	
-	
-
-
-
-
-
-
-
 
 </html>
